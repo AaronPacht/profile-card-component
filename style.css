@@ -1,0 +1,131 @@
+*{  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+
+html{
+    background-color: rgb(11, 188, 201);
+}
+
+/* circle design in top left corner */
+header{
+    position: absolute;
+    left: -300px;
+    top: -500px;
+}
+
+/* circle design in bottom right corner */
+footer{
+    position: absolute;
+    right: -250px;
+    bottom: -600px;
+}
+
+/* profile card and links at the bottom of the page */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* profile card */
+body>.profile{
+    position: absolute;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+/* top of the profile card with profile */
+.box{
+    border: 0 solid white;
+    width: 350px;
+    height: 280px;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* image on profile card */
+.box>svg{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* name and location on profile card */
+.words>p{
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+/* bottom of profile card with stats */
+.box2{
+    border: 0 solid white;
+    border-top: 1px solid gray;
+    width: 350px;
+    height: 100px;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* profile picture */
+.victor{
+    position: absolute;
+    left: 125px;
+    top: 90px;
+    border: 5px solid white;
+    border-radius: 100px;
+}
+
+/* profile picture img */
+.victor>img{
+    border-radius: 100px;
+}
+
+/* bold text */
+strong{
+    background-color: white;
+}
+
+/* bold text for stats */
+.box2>.stat>strong{
+    font-size: 150%;
+}
+
+/* text */
+text{
+    background-color: white;
+    color: gray;
+}
+
+/* links at the bottom of the page */
+.attribution{
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+}
+
+/* each stat */
+.stat{
+    background-color: white;
+    align-self: center;
+    width: 1fr;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* image on profile card */
+.back-image{
+    background-image: url("./images/bg-pattern-card.jpg");
+    width: 350px;
+    height: 140px;
+}
+ 
